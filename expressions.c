@@ -28,7 +28,7 @@ int main()
     printf("%d\n", hehe--);
     printf("%d\n", hehe);
 
-    if (5 == '5')
+    if (53 == '5')
     {
         printf("true");
     }
@@ -41,7 +41,7 @@ int main()
     int myexp = 5 + 5 * 5;
     printf("%d\n", myexp);
 
-    
+
 
 
     return 0;
