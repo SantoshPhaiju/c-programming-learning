@@ -14,7 +14,7 @@ int main()
     printf("Enter two numbers: \n");
     scanf("%d %d", &a, &b);
 
-    printf("Enter the operator: \n");
+    printf("Enter the operators (+, -, *, /, %%) : \n");
 
     scanf(" %c", &operatorByUser);
 
@@ -41,6 +41,34 @@ int main()
     else
     {
         printf("Invalid operator");
+    }
+
+    // using switch case...
+    switch (operatorByUser)
+    {
+    case '+':
+        printf("\nThe sum of %d and %d is %d", a, b, a + b);
+        break;
+
+    case '-':
+        printf("\nThe difference of %d and %d is %d", a, b, a - b);
+        break;
+
+    case '*':
+        printf("\nThe product of %d and %d is %d", a, b, a * b);
+        break;
+
+    case '/':
+        printf("\nThe division of %d and %d is %d", a, b, a / b);
+        break;
+
+    case '%':
+        printf("\nThe remainder of %d and %d is %d", a, b, a % b);
+        break;
+
+    default:
+        printf("\nInvalid operator");
+        break;
     }
 
     return 0;
