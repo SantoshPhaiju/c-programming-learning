@@ -31,12 +31,13 @@ int main()
         }
     }
 
-
     float unit_price = 10.0, dis1 = 0.05, dis2 = 0.1, dis3 = 0.15, total_price;
 
     int qty = 11;
 
-    total_price = qty * unit_price * (qty > 10 ? 1.0 - dis3 : qty > 5 ? 1.0 - dis2 : qty > 1.0 ? 1.0 - dis1 : 1.0);
+    total_price = qty * unit_price * (qty > 10 ? 1.0 - dis3 : qty > 5 ? 1.0 - dis2
+                                                          : qty > 1.0 ? 1.0 - dis1
+                                                                      : 1.0);
 
     printf("\nThe total price is %.2f", total_price);
 
