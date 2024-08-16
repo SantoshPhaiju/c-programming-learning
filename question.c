@@ -47,5 +47,34 @@ int main()
         printf("Invalid operator");
     }
 
+    // Now doing the same using switch case statement:-
+
+    switch (operatorByUser)
+    {
+    case 1:
+        printf("\nThe sum of %d and %d is %d", a, b, a + b);
+        break;
+
+    case 2:
+        printf("\nThe sub of %d and %d is %d", a, b, a - b);
+        break;
+
+    case 3:
+        printf("The product of %d and %d is %d", a, b, a * b);
+        break;
+
+    case 4:
+        printf("The division of %d and %d is %d", a, b, a / b);
+        break;
+
+    case 5:
+        printf("The remainder of %d and %d is %d", a, b, a % b);
+        break;
+
+    default:
+        printf("Invalid operator");
+        break;
+    }
+
     return 0;
 }
