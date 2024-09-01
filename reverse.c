@@ -2,17 +2,19 @@
 
 int main() {
 
-    int num, reversedNumber = 1;
+    // int num, reversedNumber = 1;
+    int num, reversedNumber = 0;
     printf("Enter a number:- \n");
     scanf("%d", &num);
 
     while(num != 0) {
         int remainder = num % 10;
-        if(reversedNumber == 1) {
-            reversedNumber = remainder;
-        } else {
-            reversedNumber = reversedNumber * 10 + remainder;
-        }
+        // if(reversedNumber == 1) {
+        //     reversedNumber = remainder;
+        // } else {
+        //     reversedNumber = reversedNumber * 10 + remainder;
+        // }
+        reversedNumber = reversedNumber * 10 + remainder;
         num /= 10;
     }
 
