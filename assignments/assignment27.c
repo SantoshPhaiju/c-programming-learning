@@ -1,22 +1,17 @@
-// 27) WAP to read 3 digit no. & find sum of square of digits.
+// 27) WAP to read 3 digit no. & find sum of square of digits using loop
+
 #include <stdio.h>
-#include <math.h>
 
-int main()
-{
-    int num, sum = 0, remainder = 0;
-
-    printf("Enter a number:- \n");
+int main() {
+    int num;
+    printf("Enter a 3 digit number: ");
     scanf("%d", &num);
-
-    while (num != 0)
-    {
-        remainder = num % 10;
-        sum += pow(remainder, 2);
+    int sum = 0;
+    for (int i = 0; i < 3; i++) {
+        int digit = num % 10;
+        sum += digit * digit;
         num /= 10;
     }
-
-    printf("Sum of squares of digits is %d\n", sum);
-
+    printf("Sum of squares of digits: %d\n", sum);
     return 0;
 }
