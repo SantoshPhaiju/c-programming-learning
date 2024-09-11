@@ -1,18 +1,22 @@
 #include <stdio.h>
 
+#define SIZE 5
+
 int main()
 {
 
-    int inputs[5];
+    int inputs[SIZE];
 
-    printf("Please enter 5 values:- ");
-    for (int i = 0; i < 5; i++)
-    {
+    printf("Please enter %d values:- ", SIZE);
+    for (int i = 0; i < SIZE; i++)
+    { 
         printf("\nEnter the value %d :- ", i + 1);
         scanf("%d", &inputs[i]);
     }
 
-    for (int i = 0; i < 5; i++)
+    printf("\n -------------------- Values of the array ------------------------------");
+
+    for (int i = 0; i < SIZE; i++)
     {
         printf("\nYour %d value is:- %d", i + 1, inputs[i]);
     }

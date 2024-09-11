@@ -1,0 +1,1 @@
+// finding max and min from array element.
