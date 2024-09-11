@@ -2,9 +2,7 @@
 
 int main()
 {
-
     int arr[] = {5, 3, 8, 6, 2, 7, 1, 4};
-
     int temp;
 
     // code to find the length of array
