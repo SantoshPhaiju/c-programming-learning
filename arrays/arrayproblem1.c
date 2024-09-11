@@ -12,8 +12,15 @@ int main()
 
     for (int i = 0; i < num; i++)
     {
-        printf("Enter the array element %d:- ", arr[i]);
+        printf("Enter the array element %d:- ", i);
         scanf("%d", &arr[i]);
+    }
+
+    printf("\n\n---------------------- The Values Of Your Array are: -------------------\n\n");
+
+    for (int i = 0; i < num; i++)
+    {
+        printf("The value of array index %d is:- %d \n", i, arr[i]);
     }
 
     return 0;
