@@ -12,15 +12,15 @@ int main()
     {
         for (int j = i + 1; j < 8; j++)
         {
-           if(arr[j] < arr[minIndex]){
-               minIndex = j;
-           }
+            if (arr[j] < arr[minIndex])
+            {
+                minIndex = j;
+            }
         }
 
-        int temp = arr[i];
+        temp = arr[i];
         arr[i] = arr[minIndex];
         arr[minIndex] = temp;
-
     }
 
     for (int i = 0; i < 8; i++)
