@@ -65,7 +65,7 @@ int main()
             printf("%d\t", mat3[i][j]);
         }
 
-        printf("\n");
+        printf("\n\n");
     }
 
     return 0;
