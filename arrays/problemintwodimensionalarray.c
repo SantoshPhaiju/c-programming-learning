@@ -15,8 +15,9 @@ int main() {
     printf("The elements of the array are: \n");
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
-            printf("The value of arr[%d][%d] is %d \n", i, j, arr[i][j]);
+            printf("%d\t", arr[i][j]);
         }
+        printf("\n");
     }
 
 
