@@ -1,2 +1,1 @@
-");
-    // c = getchar();
+name[i] = getchar();
