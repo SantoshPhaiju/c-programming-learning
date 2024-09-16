@@ -4,7 +4,6 @@
 
 int main()
 {
-
     int num, i, temp = 0;
 
     printf("Enter a number: \n");
