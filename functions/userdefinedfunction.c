@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void add(int a, int b);
+int add(int a, int b);
 
 int main()
 {
@@ -17,13 +17,15 @@ int main()
     }
 
     printf("\nOutside the block a = %d", a);
+    printf("\nhehe %d", add(4, 5));
 
     return 0;
 }
 
-void add(int firstNum, int secondNum)
+int add(int firstNum, int secondNum)
 {
     firstNum = firstNum + 1;
     secondNum = secondNum + 1;
     printf("The sum of %d and %d is %d", firstNum, secondNum, firstNum + secondNum);
+    return firstNum + secondNum;
 }
