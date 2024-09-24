@@ -15,7 +15,7 @@ int main()
     {
         printf("Student %d: ", i + 1);
         fgets(names[i], sizeof(names[i]), stdin);
-        names[i][strcspn(names[i], "\n")] = 0; // Removing trailing newline
+        names[i][strcspn(names[i], "\n")] = 0; 
     }
 
     sort(names);
