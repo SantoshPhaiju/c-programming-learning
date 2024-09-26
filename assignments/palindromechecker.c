@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-char stringReverse (char string[10]);
+char stringReverse(char string[10]);
 
-int main() {
-
+int main()
+{
     char stringData[10];
 
     printf("Enter a string:- \n");
@@ -11,11 +11,11 @@ int main() {
 
     char mystr = stringReverse(stringData);
 
-
     return 0;
 }
 
-char stringReverse (char string[10]) {
+char stringReverse(char string[10])
+{
     printf("mystring %s", string);
     return string[10];
 }

@@ -2,7 +2,6 @@
 
 int main()
 {
-
     int arr[] = {1, 4, 3, 5};
 
     int minIndex;
@@ -30,7 +29,7 @@ int main()
 
     for (int i = 0; i < 4; i++)
     {
-        printf("The value of arris %d \n", arr[i]);
+        printf("The value of arr is %d \n", arr[i]);
     }
 
     return 0;
