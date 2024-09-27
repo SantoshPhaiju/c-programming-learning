@@ -15,13 +15,12 @@ int main()
     {
         printf("Student %d: ", i + 1);
         fgets(names[i], sizeof(names[i]), stdin);
-        names[i][strcspn(names[i], "\n")] = 0; 
+        names[i][strcspn(names[i], "\n")] = 0;
     }
 
     sort(names);
     for (int i = 0; i < 5; i++)
     {
-
         printf("\n%s", names[i]);
     }
 
@@ -31,7 +30,7 @@ int main()
 void sort(char names[5][30])
 {
     char temp[30];
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 4; i++)
     {
         for (int j = i + 1; j < 5; j++)
         {
@@ -43,5 +42,4 @@ void sort(char names[5][30])
             }
         }
     }
-
 }
