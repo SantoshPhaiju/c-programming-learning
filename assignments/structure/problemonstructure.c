@@ -13,14 +13,12 @@ int main()
     printf("Enter the details of 5 students:-\n");
     for (int i = 0; i < 5; i++)
     {
-        printf("Enter the name of the student:- ");
-        fgets(s[i].name, sizeof(s[i].name), stdin);
-        fgets(s[i].name, sizeof(s[i].name), stdin);
-        printf("Enter the roll number of the student:- ");
+        printf("Enter the name of the student %d:- ", i);
+        scanf(" %s", s[i].name);
+        printf("Enter the roll number of the student %d:- ", i);
         scanf(" %d", &s[i].roll_no);
-        printf("Enter the phone number of the student:- ");
-        fgets(s[i].phoneNumber, sizeof(s[i].phoneNumber), stdin);
-        fgets(s[i].phoneNumber, sizeof(s[i].phoneNumber), stdin);
+        printf("Enter the phone number of the student %d:- ", i);
+        scanf(" %s", s[i].phoneNumber);
     }
 
     printf("\nDetails of the students are:-\n");
