@@ -1,7 +1,5 @@
 // WAP to store student name, rollno, and address (district, zone) using structure. Here address is a different structure. Using concept of nested structure.
 
-// Using both concept of nesting structure.
-
 #include <stdio.h>
 
 int main()
