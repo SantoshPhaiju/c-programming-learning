@@ -28,9 +28,15 @@ int main()
     printf("\nHow many numbers do you want to add more:- ");
     scanf("%d", &na);
 
-    ptr = (int *)realloc(ptr, na + 5 * sizeof(int));
+    ptr = (int *)realloc(ptr, na + n * sizeof(int));
+    if (ptr == NULL)
+    {
+        printf("Memory Allocation failed");
+        exit(1);
+    }
 
-    for (int i = na; i < na + 5; i++)
+    printf("\nEnter %d numbers: ", na);
+    for (int i = na; i < na + n; i++)
     {
         scanf("%d", (ptr + i));
         sum += *(ptr + i);
