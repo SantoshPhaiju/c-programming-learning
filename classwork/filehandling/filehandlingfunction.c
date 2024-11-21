@@ -7,17 +7,17 @@ int main()
 {
     FILE *fp;
     char name[50];
-    int rollno;
+    int rollno, chars;
     float marks;
 
     printf("Enter the name of the student: ");
-    scanf("%[^\n]", name);
+    scanf(" %[^\n]", name);
     printf("Enter the roll_no of the student: ");
     scanf("%d", &rollno);
     printf("Enter the marks of CS of the student: ");
     scanf("%f", &marks);
 
-    fp = fopen("studentdata.txt", "w");
+    fp = fopen("studentdata.dat", "wb");
     if (fp == NULL)
     {
         printf("Error opening the file!");
@@ -27,7 +27,7 @@ int main()
     fprintf(fp, "Name: %s\nRoll No: %d\nMarks in CS: %.2f", name, rollno, marks);
     fclose(fp);
 
-    fp = fopen("studentdata.txt", "r");
+    fp = fopen("studentdata.dat", "rb");
     if (fp == NULL)
     {
         printf("Error opening the file!");
