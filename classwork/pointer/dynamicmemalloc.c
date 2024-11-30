@@ -5,7 +5,6 @@
 
 int main()
 {
-
     int n, *ptr, i, sum = 0;
 
     printf("Enter number of elements to enter:- ");
