@@ -15,7 +15,7 @@ int main()
     if (ptr == NULL)
     {
         printf("\nError: Memory Allocation Failed");
-        exit(0);
+        exit(1);
     }
 
     printf("\nEnter the %d values of the array:- ", n);

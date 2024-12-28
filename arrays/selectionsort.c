@@ -8,7 +8,6 @@ int main()
     int temp;
 
     for (int i = 0; i < 3; i++)
-
     {
         minIndex = i;
         for (int j = i + 1; j < 4; j++)

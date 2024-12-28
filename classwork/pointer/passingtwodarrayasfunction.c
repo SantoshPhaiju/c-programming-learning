@@ -19,7 +19,6 @@ void show(int (*p)[4], int r, int c)
 
 int main()
 {
-
     int arr[3][4] = {
         {1, 2, 3, 4},
         {5, 6, 7, 8},

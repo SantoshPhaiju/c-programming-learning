@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    "*.dart": "dart",
+    "CONCENTR.C": "cpp",
+    "GRAPHICS.C": "cpp"
+  }
+}

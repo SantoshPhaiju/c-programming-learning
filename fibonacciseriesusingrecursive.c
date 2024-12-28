@@ -11,7 +11,6 @@ int main() {
     {
         printf("%d, ", fibonacci(i));
     }
-    
 
     return 0;
 }
