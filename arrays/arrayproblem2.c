@@ -1,7 +1,7 @@
-
 // finding sum from array element provided by the user.
 
 #include <stdio.h>
+
 #define SIZE 50
 
 int main()

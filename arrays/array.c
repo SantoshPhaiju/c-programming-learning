@@ -2,15 +2,13 @@
 
 int main()
 {
-
     // * Chapter Seven HeHe
-
     printf("Learning about the array's in c programming here okey dokey hehe!!!");
 
     // * Array is a sequence of data items that are:-
     // - all of the same kind
     // - indexible
-    // _ stored contiguously in memory
+    // - stored contiguously in memory
 
     // ? One Dimensional Array HEHE:-
     int a[5] = {1, 2, 3, 4, 5};
